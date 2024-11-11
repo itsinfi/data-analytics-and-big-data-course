@@ -1,0 +1,3 @@
+../data/Einkommen.xlsx
+../data/CustomerInfoSystem1.xlsx
+C:\Users\Infi\knime-workspace\L1-AP\data\CustomerInfoSystem1.xlsx

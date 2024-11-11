@@ -1,0 +1,61 @@
+{
+    "type": "object",
+    "properties": {
+        "credentials-input-3": {
+            "type": "object",
+            "properties": {
+                "username": {
+                    "type": "string",
+                    "default": "root"
+                },
+                "password": {
+                }
+            },
+            "description": "Enter Description",
+            "example": {
+                "username": "root",
+                "password": null
+            }
+        },
+        "credential-input": {
+            "type": "object",
+            "properties": {
+                "isEncrypted": {
+                    "type": "boolean",
+                    "default": "false"
+                },
+                "credentials": {
+                    "type": "array",
+                    "items": {
+                        "type": "object",
+                        "properties": {
+                            "id": {
+                                "type": "string",
+                                "default": "id"
+                            },
+                            "user": {
+                                "type": "string",
+                                "default": "user"
+                            },
+                            "password": {
+                                "type": "string",
+                                "default": "password"
+                            }
+                        }
+                    }
+                }
+            },
+            "description": "",
+            "example": {
+                "isEncrypted": false,
+                "credentials": [
+                    {
+                        "id": "id",
+                        "user": "user",
+                        "password": "password"
+                    }
+                ]
+            }
+        }
+    }
+}

@@ -1,0 +1,56 @@
+{
+  "version" : "5.3.2.v202409051351",
+  "projects" : [ {
+    "name" : "01_ASSOZIATION",
+    "active" : true,
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "relativePath" : "01_ASSOZIATION"
+    }
+  }, {
+    "name" : "excel read",
+    "active" : false,
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "relativePath" : "L1-AP\\excel read"
+    }
+  }, {
+    "name" : "mysql connection",
+    "active" : false,
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "relativePath" : "L1-AP\\mysql connection"
+    }
+  } ],
+  "mostRecentlyUsedProjects" : [ {
+    "name" : "01_ASSOZIATION",
+    "timeUsed" : "2024-10-18T13:09:38.437809+02:00",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "01_ASSOZIATION"
+    }
+  }, {
+    "name" : "excel read",
+    "timeUsed" : "2024-11-02T15:02:12.5982597+01:00",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "L1-AP\\excel read"
+    }
+  }, {
+    "name" : "mysql connection",
+    "timeUsed" : "2024-11-02T15:07:50.6849073+01:00",
+    "origin" : {
+      "providerId" : "local",
+      "spaceId" : "local",
+      "projectType" : "WORKFLOW",
+      "relativePath" : "L1-AP\\mysql connection"
+    }
+  } ]
+}

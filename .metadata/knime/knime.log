@@ -1,0 +1,391 @@
+2024-10-18 13:09:44,935 : WARN  : comm-pool-thread-1 :  : Node : CSV Reader : 3:1 : Please specify a file
+2024-10-18 13:51:15,634 : WARN  : main :  : Node : Cell Splitter : 3:2 : Specify the column to split.
+2024-10-18 13:51:20,313 : WARN  : KNIME-Worker-1-CSV Reader 3:1 :  : Node : Cell Splitter : 3:2 : Specify the column to split.
+2024-10-18 13:51:56,224 : WARN  : main :  : Node : Association Rule Learner : 3:4 : Expecting at least one column containing transactions,(BitVectors or CollectionCells)
+2024-10-18 13:51:57,502 : WARN  : KNIME-Worker-1-Cell Splitter 3:2 :  : Node : Association Rule Learner : 3:4 : Expecting at least one column containing transactions,(BitVectors or CollectionCells)
+2024-10-18 13:53:07,939 : WARN  : KNIME-Worker-1-Association Rule Learner 3:4 :  : Node : Association Rule Learner : 3:4 : Node created an empty data table.
+2024-10-18 13:53:25,877 : WARN  : KNIME-Worker-1-Association Rule Learner 3:4 :  : Node : Association Rule Learner : 3:4 : Node created an empty data table.
+2024-10-19 15:22:46,571 : ERROR : main :  : KnimeBrowserView :  :  : TypeError: Cannot read properties of null (reading 'shadowRoot') (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 14)
+2024-10-19 15:23:15,824 : WARN  : main :  : Node : Cell Splitter : 3:2 : Input table doesn't contain specified column name.
+2024-10-19 15:23:17,435 : WARN  : KNIME-Worker-0-CSV Reader 3:1 :  : Node : Cell Splitter : 3:2 : Input table doesn't contain specified column name.
+2024-10-19 15:23:33,863 : WARN  : main :  : Node : Association Rule Learner : 3:4 : Set the column with the transactions
+2024-10-19 15:23:35,225 : WARN  : KNIME-Worker-0-Cell Splitter 3:2 :  : Node : Association Rule Learner : 3:4 : Set the column with the transactions
+2024-11-02 15:02:15,713 : WARN  : comm-pool-thread-4 :  : Node : Excel Reader : 4:1 : Please specify a file
+2024-11-02 15:08:04,559 : WARN  : comm-pool-thread-7 :  : Node : MySQL Connector : 5:1 : Database host is not defined.
+2024-11-02 15:09:17,947 : WARN  : main :  : WrappedNodeDialog : MySQL Connector : 5:1 : failed to apply settings: Please enter a valid password
+org.knime.core.node.InvalidSettingsException: Please enter a valid password
+	at org.knime.core.node.defaultnodesettings.SettingsModelAuthentication.validateSettingsForModel(SettingsModelAuthentication.java:266)
+	at org.knime.core.node.defaultnodesettings.SettingsModel.validateSettings(SettingsModel.java:337)
+	at org.knime.database.node.connector.server.ServerDBConnectorSettings.validate(ServerDBConnectorSettings.java:113)
+	at org.knime.database.node.connector.AbstractDBConnectorNodeDialog.saveSettingsTo(AbstractDBConnectorNodeDialog.java:375)
+	at org.knime.database.node.connector.server.ServerDBConnectorNodeDialog.saveSettingsTo(ServerDBConnectorNodeDialog.java:163)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2024-11-02 15:09:23,544 : WARN  : main :  : WrappedNodeDialog : MySQL Connector : 5:1 : failed to apply settings: Please enter a valid password
+org.knime.core.node.InvalidSettingsException: Please enter a valid password
+	at org.knime.core.node.defaultnodesettings.SettingsModelAuthentication.validateSettingsForModel(SettingsModelAuthentication.java:266)
+	at org.knime.core.node.defaultnodesettings.SettingsModel.validateSettings(SettingsModel.java:337)
+	at org.knime.database.node.connector.server.ServerDBConnectorSettings.validate(ServerDBConnectorSettings.java:113)
+	at org.knime.database.node.connector.AbstractDBConnectorNodeDialog.saveSettingsTo(AbstractDBConnectorNodeDialog.java:375)
+	at org.knime.database.node.connector.server.ServerDBConnectorNodeDialog.saveSettingsTo(ServerDBConnectorNodeDialog.java:163)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2024-11-02 15:13:04,256 : ERROR : KNIME-Worker-2-MySQL Connector 5:1 :  : Node : MySQL Connector : 5:1 : Execute failed: Access denied for user 'root'@'localhost' (using password: YES)
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at org.knime.database.connection.UrlDBConnectionController$ControlledDriver.connect(UrlDBConnectionController.java:103)
+	at org.knime.database.connection.UrlDBConnectionController.connect(UrlDBConnectionController.java:368)
+	at org.knime.database.connection.UserDBConnectionController.connect(UserDBConnectionController.java:302)
+	at org.knime.database.connection.UrlDBConnectionController.createConnection(UrlDBConnectionController.java:348)
+	at org.knime.database.connection.AbstractConnectionProvider.createConnection(AbstractConnectionProvider.java:103)
+	at org.knime.database.connection.impl.DBConnectionManager.lambda$4(DBConnectionManager.java:594)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2024-11-02 15:13:09,233 : WARN  : main :  : WrappedNodeDialog : MySQL Connector : 5:1 : failed to apply settings: Please enter a valid password
+org.knime.core.node.InvalidSettingsException: Please enter a valid password
+	at org.knime.core.node.defaultnodesettings.SettingsModelAuthentication.validateSettingsForModel(SettingsModelAuthentication.java:266)
+	at org.knime.core.node.defaultnodesettings.SettingsModel.validateSettings(SettingsModel.java:337)
+	at org.knime.database.node.connector.server.ServerDBConnectorSettings.validate(ServerDBConnectorSettings.java:113)
+	at org.knime.database.node.connector.AbstractDBConnectorNodeDialog.saveSettingsTo(AbstractDBConnectorNodeDialog.java:375)
+	at org.knime.database.node.connector.server.ServerDBConnectorNodeDialog.saveSettingsTo(ServerDBConnectorNodeDialog.java:163)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2024-11-02 15:15:06,679 : WARN  : main :  : WrappedNodeDialog : MySQL Connector : 5:1 : failed to apply settings: Please enter a valid password
+org.knime.core.node.InvalidSettingsException: Please enter a valid password
+	at org.knime.core.node.defaultnodesettings.SettingsModelAuthentication.validateSettingsForModel(SettingsModelAuthentication.java:266)
+	at org.knime.core.node.defaultnodesettings.SettingsModel.validateSettings(SettingsModel.java:337)
+	at org.knime.database.node.connector.server.ServerDBConnectorSettings.validate(ServerDBConnectorSettings.java:113)
+	at org.knime.database.node.connector.AbstractDBConnectorNodeDialog.saveSettingsTo(AbstractDBConnectorNodeDialog.java:375)
+	at org.knime.database.node.connector.server.ServerDBConnectorNodeDialog.saveSettingsTo(ServerDBConnectorNodeDialog.java:163)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2024-11-02 15:15:10,807 : WARN  : main :  : WrappedNodeDialog : MySQL Connector : 5:1 : failed to apply settings: Please enter a valid password
+org.knime.core.node.InvalidSettingsException: Please enter a valid password
+	at org.knime.core.node.defaultnodesettings.SettingsModelAuthentication.validateSettingsForModel(SettingsModelAuthentication.java:266)
+	at org.knime.core.node.defaultnodesettings.SettingsModel.validateSettings(SettingsModel.java:337)
+	at org.knime.database.node.connector.server.ServerDBConnectorSettings.validate(ServerDBConnectorSettings.java:113)
+	at org.knime.database.node.connector.AbstractDBConnectorNodeDialog.saveSettingsTo(AbstractDBConnectorNodeDialog.java:375)
+	at org.knime.database.node.connector.server.ServerDBConnectorNodeDialog.saveSettingsTo(ServerDBConnectorNodeDialog.java:163)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2024-11-02 15:15:13,084 : WARN  : main :  : WrappedNodeDialog : MySQL Connector : 5:1 : failed to apply settings: Please enter a valid password
+org.knime.core.node.InvalidSettingsException: Please enter a valid password
+	at org.knime.core.node.defaultnodesettings.SettingsModelAuthentication.validateSettingsForModel(SettingsModelAuthentication.java:266)
+	at org.knime.core.node.defaultnodesettings.SettingsModel.validateSettings(SettingsModel.java:337)
+	at org.knime.database.node.connector.server.ServerDBConnectorSettings.validate(ServerDBConnectorSettings.java:113)
+	at org.knime.database.node.connector.AbstractDBConnectorNodeDialog.saveSettingsTo(AbstractDBConnectorNodeDialog.java:375)
+	at org.knime.database.node.connector.server.ServerDBConnectorNodeDialog.saveSettingsTo(ServerDBConnectorNodeDialog.java:163)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2024-11-02 15:19:30,491 : WARN  : main :  : WrappedNodeDialog : MySQL Connector : 5:1 : failed to apply settings: Please enter a valid password
+org.knime.core.node.InvalidSettingsException: Please enter a valid password
+	at org.knime.core.node.defaultnodesettings.SettingsModelAuthentication.validateSettingsForModel(SettingsModelAuthentication.java:266)
+	at org.knime.core.node.defaultnodesettings.SettingsModel.validateSettings(SettingsModel.java:337)
+	at org.knime.database.node.connector.server.ServerDBConnectorSettings.validate(ServerDBConnectorSettings.java:113)
+	at org.knime.database.node.connector.AbstractDBConnectorNodeDialog.saveSettingsTo(AbstractDBConnectorNodeDialog.java:375)
+	at org.knime.database.node.connector.server.ServerDBConnectorNodeDialog.saveSettingsTo(ServerDBConnectorNodeDialog.java:163)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2024-11-02 15:19:32,299 : WARN  : main :  : WrappedNodeDialog : MySQL Connector : 5:1 : failed to apply settings: Please enter a valid password
+org.knime.core.node.InvalidSettingsException: Please enter a valid password
+	at org.knime.core.node.defaultnodesettings.SettingsModelAuthentication.validateSettingsForModel(SettingsModelAuthentication.java:266)
+	at org.knime.core.node.defaultnodesettings.SettingsModel.validateSettings(SettingsModel.java:337)
+	at org.knime.database.node.connector.server.ServerDBConnectorSettings.validate(ServerDBConnectorSettings.java:113)
+	at org.knime.database.node.connector.AbstractDBConnectorNodeDialog.saveSettingsTo(AbstractDBConnectorNodeDialog.java:375)
+	at org.knime.database.node.connector.server.ServerDBConnectorNodeDialog.saveSettingsTo(ServerDBConnectorNodeDialog.java:163)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2024-11-02 15:20:35,492 : WARN  : main :  : WrappedNodeDialog : MySQL Connector : 5:1 : failed to apply settings: Please select a valid credential
+org.knime.core.node.InvalidSettingsException: Please select a valid credential
+	at org.knime.core.node.defaultnodesettings.SettingsModelAuthentication.validateSettingsForModel(SettingsModelAuthentication.java:249)
+	at org.knime.core.node.defaultnodesettings.SettingsModel.validateSettings(SettingsModel.java:337)
+	at org.knime.database.node.connector.server.ServerDBConnectorSettings.validate(ServerDBConnectorSettings.java:113)
+	at org.knime.database.node.connector.AbstractDBConnectorNodeDialog.saveSettingsTo(AbstractDBConnectorNodeDialog.java:375)
+	at org.knime.database.node.connector.server.ServerDBConnectorNodeDialog.saveSettingsTo(ServerDBConnectorNodeDialog.java:163)
+	at org.knime.core.node.NodeDialogPane.internalSaveSettingsTo(NodeDialogPane.java:553)
+	at org.knime.core.node.NodeDialogPane$4.run(NodeDialogPane.java:792)
+	at org.knime.core.node.util.ViewUtils$3.run(ViewUtils.java:353)
+	at org.knime.core.node.util.ViewUtils$2.run(ViewUtils.java:155)
+	at java.desktop/java.awt.event.InvocationEvent.dispatch(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEventImpl(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.desktop/java.awt.EventQueue$4.run(Unknown Source)
+	at java.base/java.security.AccessController.doPrivileged(Unknown Source)
+	at java.base/java.security.ProtectionDomain$JavaSecurityAccessImpl.doIntersectionPrivilege(Unknown Source)
+	at java.desktop/java.awt.EventQueue.dispatchEvent(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpOneEventForFilters(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForFilter(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEventsForHierarchy(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.pumpEvents(Unknown Source)
+	at java.desktop/java.awt.EventDispatchThread.run(Unknown Source)
+2024-11-02 15:21:52,918 : WARN  : comm-pool-thread-9 :  : Node : Credentials Input (legacy) : 5:3 : no user name set
+2024-11-02 15:22:22,128 : ERROR : KNIME-Worker-3-MySQL Connector 5:1 :  : Node : MySQL Connector : 5:1 : Execute failed: Access denied for user 'root'@'localhost' (using password: YES)
+java.sql.SQLException: Access denied for user 'root'@'localhost' (using password: YES)
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:129)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at org.knime.database.connection.UrlDBConnectionController$ControlledDriver.connect(UrlDBConnectionController.java:103)
+	at org.knime.database.connection.UrlDBConnectionController.connect(UrlDBConnectionController.java:368)
+	at org.knime.database.connection.UserDBConnectionController.connect(UserDBConnectionController.java:302)
+	at org.knime.database.connection.UrlDBConnectionController.createConnection(UrlDBConnectionController.java:348)
+	at org.knime.database.connection.AbstractConnectionProvider.createConnection(AbstractConnectionProvider.java:103)
+	at org.knime.database.connection.impl.DBConnectionManager.lambda$4(DBConnectionManager.java:594)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2024-11-02 15:22:28,931 : ERROR : KNIME-Worker-3-MySQL Connector 5:1 :  : Node : MySQL Connector : 5:1 : Execute failed: Unknown database 'jakarta-ee-test'
+java.sql.SQLSyntaxErrorException: Unknown database 'jakarta-ee-test'
+	at com.mysql.cj.jdbc.exceptions.SQLError.createSQLException(SQLError.java:120)
+	at com.mysql.cj.jdbc.exceptions.SQLExceptionsMapping.translateException(SQLExceptionsMapping.java:122)
+	at com.mysql.cj.jdbc.ConnectionImpl.createNewIO(ConnectionImpl.java:828)
+	at com.mysql.cj.jdbc.ConnectionImpl.<init>(ConnectionImpl.java:448)
+	at com.mysql.cj.jdbc.ConnectionImpl.getInstance(ConnectionImpl.java:241)
+	at com.mysql.cj.jdbc.NonRegisteringDriver.connect(NonRegisteringDriver.java:198)
+	at org.knime.database.connection.UrlDBConnectionController$ControlledDriver.connect(UrlDBConnectionController.java:103)
+	at org.knime.database.connection.UrlDBConnectionController.connect(UrlDBConnectionController.java:368)
+	at org.knime.database.connection.UserDBConnectionController.connect(UserDBConnectionController.java:302)
+	at org.knime.database.connection.UrlDBConnectionController.createConnection(UrlDBConnectionController.java:348)
+	at org.knime.database.connection.AbstractConnectionProvider.createConnection(AbstractConnectionProvider.java:103)
+	at org.knime.database.connection.impl.DBConnectionManager.lambda$4(DBConnectionManager.java:594)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2024-11-02 15:23:26,613 : WARN  : comm-pool-thread-10 :  : Node : DB Table Selector : 5:4 : No table or view defined
+2024-11-02 16:08:34,373 : WARN  : comm-pool-thread-17 :  : Node : Row Filter : 4:3 : At least one filter criterion is needed.
+2024-11-02 16:17:26,582 : WARN  : comm-pool-thread-24 :  : Node : Row Filter : 4:3 : At least one filter criterion is needed.
+2024-11-02 16:18:26,845 : WARN  : main :  : Node : Row Filter : 4:3 : At least one filter criterion is needed.
+2024-11-02 16:18:28,701 : WARN  : KNIME-Worker-7-Missing Value 4:4 :  : Node : Missing Value : 4:4 : Column "Column" still contains missing values.
+Column "CorporateEmail" still contains missing values.
+2024-11-02 16:18:28,758 : WARN  : KNIME-Worker-7-Missing Value 4:4 :  : Node : Row Filter : 4:3 : At least one filter criterion is needed.
+2024-11-02 16:19:14,664 : WARN  : main :  : Node : Row Filter : 4:3 : At least one filter criterion is needed.
+2024-11-02 16:19:16,541 : WARN  : KNIME-Worker-9-Missing Value 4:4 :  : Node : Missing Value : 4:4 : Node created an empty data table.
+2024-11-02 16:19:16,542 : WARN  : KNIME-Worker-9-Missing Value 4:4 :  : Node : Row Filter : 4:3 : At least one filter criterion is needed.
+2024-11-02 21:47:08,553 : WARN  : ModalContext :  : Node : Missing Value : 3:4 : Node created an empty data table.
+2024-11-02 21:47:08,565 : WARN  : ModalContext :  : Node : Row Filter : 3:3 : At least one filter criterion is needed.
+2024-11-02 21:47:08,566 : WARN  : ModalContext :  : Node : Row Filter : 3:3 : At least one filter criterion is needed.
+2024-11-11 19:35:31,350 : WARN  : ModalContext :  : Node : MySQL Connector : 4:1 : DB Connection no longer available. Go to advanced settings to enable connection restoration.
+2024-11-11 19:56:38,911 : WARN  : comm-pool-thread-4 :  : Node : Excel Reader : 3:1 : Please specify a file
+2024-11-11 19:59:50,080 : WARN  : comm-pool-thread-5 :  : Node : Numeric Outliers : 3:4 : Auto configuration: Outlier Selection uses all suitable columns (in total 6).
+2024-11-11 20:00:26,482 : ERROR : KNIME-Worker-3-Box Plot 3:2 :  : Node : Box Plot : 3:2 : Execute failed: The input table contains only missing or NaN values in the selected dimension columns.
+org.knime.core.node.InvalidSettingsException: The input table contains only missing or NaN values in the selected dimension columns.
+	at org.knime.base.views.node.boxplot.BoxPlotNodeFactory.createViewData(BoxPlotNodeFactory.java:270)
+	at org.knime.base.views.node.boxplot.BoxPlotNodeFactory.createViewData(BoxPlotNodeFactory.java:222)
+	at org.knime.base.views.node.boxplot.BoxPlotNodeFactory.onExecute(BoxPlotNodeFactory.java:181)
+	at org.knime.base.views.node.BaseViewsNodeModel.lambda$6(BaseViewsNodeModel.java:199)
+	at org.knime.base.views.node.BaseViewsNodeModel.execute(BaseViewsNodeModel.java:243)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-11-11 20:02:33,172 : ERROR : KNIME-Worker-3-Box Plot 3:2 :  : Node : Box Plot : 3:2 : Execute failed: The input table contains only missing or NaN values in the selected dimension columns.
+org.knime.core.node.InvalidSettingsException: The input table contains only missing or NaN values in the selected dimension columns.
+	at org.knime.base.views.node.boxplot.BoxPlotNodeFactory.createViewData(BoxPlotNodeFactory.java:270)
+	at org.knime.base.views.node.boxplot.BoxPlotNodeFactory.createViewData(BoxPlotNodeFactory.java:222)
+	at org.knime.base.views.node.boxplot.BoxPlotNodeFactory.onExecute(BoxPlotNodeFactory.java:181)
+	at org.knime.base.views.node.BaseViewsNodeModel.lambda$6(BaseViewsNodeModel.java:199)
+	at org.knime.base.views.node.BaseViewsNodeModel.execute(BaseViewsNodeModel.java:243)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-11-11 20:03:15,997 : ERROR : KNIME-Worker-3-Box Plot 3:2 :  : Node : Box Plot : 3:2 : Execute failed: The input table contains only missing or NaN values in the selected dimension columns.
+org.knime.core.node.InvalidSettingsException: The input table contains only missing or NaN values in the selected dimension columns.
+	at org.knime.base.views.node.boxplot.BoxPlotNodeFactory.createViewData(BoxPlotNodeFactory.java:270)
+	at org.knime.base.views.node.boxplot.BoxPlotNodeFactory.createViewData(BoxPlotNodeFactory.java:222)
+	at org.knime.base.views.node.boxplot.BoxPlotNodeFactory.onExecute(BoxPlotNodeFactory.java:181)
+	at org.knime.base.views.node.BaseViewsNodeModel.lambda$6(BaseViewsNodeModel.java:199)
+	at org.knime.base.views.node.BaseViewsNodeModel.execute(BaseViewsNodeModel.java:243)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-11-11 20:04:46,111 : WARN  : comm-pool-thread-9 :  : Node : Linear Correlation : 3:6 : Auto configuration: Using all suitable columns (in total 9)
+2024-11-11 20:09:35,107 : WARN  : KNIME-Worker-4-Linear Regression Learner 3:9 :  : Node : Linear Regression Learner : 3:9 : not enough data (6 rows) for this many predictors (13 predictors)
+2024-11-11 20:11:55,210 : WARN  : comm-pool-thread-13 :  : Node : Numeric Scorer : 3:11 : No columns selected for reference
+2024-11-11 20:11:57,861 : WARN  : KNIME-Worker-4-Regression Predictor 3:10 :  : Node : Numeric Scorer : 3:11 : No columns selected for reference
+2024-11-11 20:33:17,425 : WARN  : comm-pool-thread-18 :  : Node : CSV Reader : 4:1 : Please specify a file
+2024-11-11 20:34:12,465 : WARN  : comm-pool-thread-19 :  : Node : Partitioning : 4:3 : No sampling method selected
+2024-11-11 20:36:25,824 : WARN  : main :  : Node : Numeric Scorer : 4:5 : No columns selected for reference
+2024-11-11 20:37:14,483 : WARN  : main :  : Node : Numeric Scorer : 4:5 : No columns selected for reference
+2024-11-11 20:37:22,061 : WARN  : KNIME-Worker-13-Regression Predictor 4:4 :  : Node : Numeric Scorer : 4:5 : No columns selected for reference
+2024-11-11 20:41:54,204 : WARN  : KNIME-Worker-29-Linear Regression Learner 4:16 :  : Node : Linear Regression Learner : 4:16 : The following columns are redundant and will not contribute to the model: MODELYEAR. Coefficient statistics will not be accurate and contain missing information.
+2024-11-11 20:43:42,449 : WARN  : comm-pool-thread-23 :  : Node : Linear Correlation : 4:19 : Auto configuration: Using all suitable columns (in total 13)
+2024-11-11 20:43:45,894 : WARN  : KNIME-Worker-42-Linear Correlation 4:19 :  : Node : Linear Correlation : 4:19 : Some numeric column(s) have low variance (are constant): "MODELYEAR"
+2024-11-11 20:59:10,165 : WARN  : comm-pool-thread-27 :  : Node : CSV Reader : 5:1 : Please specify a file
+2024-11-11 21:03:18,690 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 5:2 valid [5:1] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-11-11 21:03:18,690 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 5:2 valid [5:1] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-11-11 21:03:27,280 : WARN  : comm-pool-thread-29 :  : Node : Linear Correlation : 5:2 : Auto configuration: Using all suitable columns (in total 3)
+2024-11-11 21:11:39,505 : WARN  : KNIME-Worker-88-String to Number 5:4 :  : Node : String to Number : 5:4 : Problems in 32 rows, first error: "18,50" in cell ["Row0", column "Ausländischer_Bevölkerungsanteil", row 1] can not be transformed into a number
+2024-11-11 21:11:39,520 : WARN  : KNIME-Worker-88-String to Number 5:4 :  : Node : String to Number : 5:4 : Problems in 32 rows, first error: "18,50" in cell ["Row0", column "Ausländischer_Bevölkerungsanteil", row 1] can not be transformed into a number
+ RowID  |   Bundesland   | Ausländisch... | AfD-Wahlanteil
+--------+----------------+----------------+----------------
+ Row0   | Baden-Würte... | 18,50          | 16,90         
+                           ^^^^^
+For input string: "18,50"
+2024-11-11 21:16:02,025 : WARN  : comm-pool-thread-36 :  : Node : Numeric Outliers : 5:5 : Auto configuration: Outlier Selection uses all suitable columns (in total 2).

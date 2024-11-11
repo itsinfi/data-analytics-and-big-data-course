@@ -1,0 +1,4 @@
+../data/Afd-Ausland-Bundesland-Vergleich.csv
+../data/FuelConsumptionCo2.csv
+C:\Users\Infi\Downloads\bierchips.csv
+C:\Users\Infi\Downloads\warenkorb.csv
