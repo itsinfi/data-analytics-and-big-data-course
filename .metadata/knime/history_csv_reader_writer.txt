@@ -1,3 +1,7 @@
+../data/Einkommen_3.csv
+../data/Einkommen_2.csv
+../03_Klassen/data/Einkommen_3.csv
+../03_Klassen/data/Einkommen_2.csv
 ../data/Afd-Ausland-Bundesland-Vergleich.csv
 ../data/FuelConsumptionCo2.csv
 C:\Users\Infi\Downloads\bierchips.csv

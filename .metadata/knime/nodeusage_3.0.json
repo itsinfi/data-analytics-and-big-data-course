@@ -6,12 +6,12 @@
             {
                 "id": "org.knime.base.node.io.filehandling.csv.reader.CSVTableReaderNodeFactory",
                 "nodename": "CSV Reader",
-                "nrexecs": 5,
+                "nrexecs": 9,
                 "nrfails": 0,
-                "exectime": 147,
-                "nrcreated": 2,
-                "successor": "org.knime.base.node.preproc.colconvert.stringtonumber2.StringToNumber2NodeFactory",
-                "successornodename": "String to Number"
+                "exectime": 547,
+                "nrcreated": 4,
+                "successor": "org.knime.base.node.preproc.normalize3.Normalizer3NodeFactory",
+                "successornodename": "Normalizer"
             },
             {
                 "id": "org.knime.base.node.preproc.cellsplit2.CellSplitter2NodeFactory",
@@ -126,12 +126,12 @@
             {
                 "id": "org.knime.base.node.preproc.pmml.missingval.compute.MissingValueHandlerNodeFactory",
                 "nodename": "Missing Value",
-                "nrexecs": 3,
+                "nrexecs": 6,
                 "nrfails": 0,
-                "exectime": 570,
-                "nrcreated": 2,
-                "successor": "org.knime.base.views.node.boxplot.BoxPlotNodeFactory",
-                "successornodename": "Box Plot"
+                "exectime": 780,
+                "nrcreated": 3,
+                "successor": "org.knime.base.node.preproc.pmml.missingval.apply.MissingValueApplyNodeFactory",
+                "successornodename": "Missing Value (Apply)"
             },
             {
                 "id": "org.knime.base.views.node.boxplot.BoxPlotNodeFactory",
@@ -156,20 +156,20 @@
             {
                 "id": "org.knime.base.node.stats.outlier.handler.NumericOutliersNodeFactory",
                 "nodename": "Numeric Outliers",
-                "nrexecs": 1,
+                "nrexecs": 9,
                 "nrfails": 0,
-                "exectime": 693,
-                "nrcreated": 2,
-                "successor": "n/a",
-                "successornodename": "n/a"
+                "exectime": 2071,
+                "nrcreated": 5,
+                "successor": "org.knime.base.node.stats.outlier.applier.NumericOutliersApplyNodeFactory",
+                "successornodename": "Numeric Outliers (Apply)"
             },
             {
                 "id": "org.knime.base.node.preproc.correlation.compute2.CorrelationCompute2NodeFactory",
                 "nodename": "Linear Correlation",
-                "nrexecs": 8,
+                "nrexecs": 12,
                 "nrfails": 0,
-                "exectime": 122,
-                "nrcreated": 3,
+                "exectime": 245,
+                "nrcreated": 4,
                 "successor": "org.knime.base.views.node.scatterplot.ScatterPlotNodeFactory",
                 "successornodename": "Scatter Plot"
             },
@@ -186,12 +186,12 @@
             {
                 "id": "org.knime.base.node.preproc.partition.PartitionNodeFactory",
                 "nodename": "Partitioning",
-                "nrexecs": 2,
+                "nrexecs": 12,
                 "nrfails": 0,
-                "exectime": 33,
-                "nrcreated": 2,
-                "successor": "org.knime.base.node.mine.regression.linear2.learner.LinReg2LearnerNodeFactory2",
-                "successornodename": "Linear Regression Learner"
+                "exectime": 154,
+                "nrcreated": 4,
+                "successor": "org.knime.base.node.mine.regression.logistic.predictor.LogisticRegressionPredictorNodeFactory",
+                "successornodename": "Logistic Regression Predictor"
             },
             {
                 "id": "org.knime.base.node.mine.regression.linear2.learner.LinReg2LearnerNodeFactory2",
@@ -199,7 +199,7 @@
                 "nrexecs": 7,
                 "nrfails": 0,
                 "exectime": 392,
-                "nrcreated": 2,
+                "nrcreated": 4,
                 "successor": "org.knime.base.node.mine.regression.predict3.RegressionPredictorNodeFactory2",
                 "successornodename": "Regression Predictor"
             },
@@ -250,8 +250,68 @@
                 "nrfails": 0,
                 "exectime": 50,
                 "nrcreated": 1,
-                "successor": "org.knime.base.views.node.scatterplot.ScatterPlotNodeFactory",
-                "successornodename": "Scatter Plot"
+                "successor": "org.knime.base.node.stats.outlier.handler.NumericOutliersNodeFactory",
+                "successornodename": "Numeric Outliers"
+            },
+            {
+                "id": "org.knime.base.node.preproc.normalize3.Normalizer3NodeFactory",
+                "nodename": "Normalizer",
+                "nrexecs": 7,
+                "nrfails": 0,
+                "exectime": 563,
+                "nrcreated": 2,
+                "successor": "org.knime.base.node.preproc.partition.PartitionNodeFactory",
+                "successornodename": "Partitioning"
+            },
+            {
+                "id": "org.knime.base.node.mine.regression.logistic.learner4.LogRegLearnerNodeFactory4",
+                "nodename": "Logistic Regression Learner",
+                "nrexecs": 8,
+                "nrfails": 2,
+                "exectime": 1090,
+                "nrcreated": 2,
+                "successor": "org.knime.base.node.mine.regression.logistic.predictor.LogisticRegressionPredictorNodeFactory",
+                "successornodename": "Logistic Regression Predictor"
+            },
+            {
+                "id": "org.knime.base.node.mine.regression.logistic.predictor.LogisticRegressionPredictorNodeFactory",
+                "nodename": "Logistic Regression Predictor",
+                "nrexecs": 7,
+                "nrfails": 0,
+                "exectime": 322,
+                "nrcreated": 2,
+                "successor": "org.knime.base.node.mine.scorer.accuracy.AccuracyScorer2NodeFactory",
+                "successornodename": "Scorer"
+            },
+            {
+                "id": "org.knime.base.node.mine.scorer.accuracy.AccuracyScorer2NodeFactory",
+                "nodename": "Scorer",
+                "nrexecs": 7,
+                "nrfails": 0,
+                "exectime": 40,
+                "nrcreated": 2,
+                "successor": "n/a",
+                "successornodename": "n/a"
+            },
+            {
+                "id": "org.knime.base.node.stats.outlier.applier.NumericOutliersApplyNodeFactory",
+                "nodename": "Numeric Outliers (Apply)",
+                "nrexecs": 4,
+                "nrfails": 0,
+                "exectime": 248,
+                "nrcreated": 1,
+                "successor": "org.knime.base.node.stats.outlier.handler.NumericOutliersNodeFactory",
+                "successornodename": "Numeric Outliers"
+            },
+            {
+                "id": "org.knime.base.node.preproc.pmml.missingval.apply.MissingValueApplyNodeFactory",
+                "nodename": "Missing Value (Apply)",
+                "nrexecs": 3,
+                "nrfails": 0,
+                "exectime": 154,
+                "nrcreated": 1,
+                "successor": "org.knime.base.node.preproc.normalize3.Normalizer3NodeFactory",
+                "successornodename": "Normalizer"
             }
         ],
         "metaNodes": {
@@ -259,12 +319,12 @@
         "wrappedNodes": {
         },
         "createdVia": {
-            "WEB_UI": 33,
-            "WEB_UI_QUICK_INSERTION_RECOMMENDED": 1
+            "WEB_UI": 54,
+            "WEB_UI_QUICK_INSERTION_RECOMMENDED": 2
         }
     },
-    "uptime": 16889733,
-    "workflowsOpened": 13,
+    "uptime": 14478052,
+    "workflowsOpened": 21,
     "remoteWorkflowsOpened": 0,
     "columnarStorageWorkflowsOpened": 0,
     "workflowsImported": 0,
@@ -272,9 +332,9 @@
     "webUIPerspectiveSwitches": 0,
     "javaUIPerspectiveSwitches": 0,
     "lastUsedPerspective": "none",
-    "launches": 7,
+    "launches": 9,
     "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
-    "timeSinceLastStart": 7563711,
+    "timeSinceLastStart": 80775,
     "crashes": 0,
-    "properlyShutDown": false
+    "properlyShutDown": true
 }

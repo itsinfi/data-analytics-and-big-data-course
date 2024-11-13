@@ -389,3 +389,158 @@ org.knime.core.node.InvalidSettingsException: The input table contains only miss
                            ^^^^^
 For input string: "18,50"
 2024-11-11 21:16:02,025 : WARN  : comm-pool-thread-36 :  : Node : Numeric Outliers : 5:5 : Auto configuration: Outlier Selection uses all suitable columns (in total 2).
+2024-11-14 00:09:34,049 : WARN  : comm-pool-thread-4 :  : Node : CSV Reader : 5:1 : Please specify a file
+2024-11-14 00:11:11,714 : WARN  : comm-pool-thread-4 :  : Node : Numeric Outliers : 5:2 : Auto configuration: Outlier Selection uses all suitable columns (in total 5).
+2024-11-14 00:13:33,358 : WARN  : comm-pool-thread-4 :  : Node : Linear Correlation : 5:4 : Auto configuration: Using all suitable columns (in total 6)
+2024-11-14 00:14:18,244 : WARN  : comm-pool-thread-5 :  : Node : Partitioning : 5:5 : No sampling method selected
+2024-11-14 00:17:27,160 : ERROR : KNIME-Worker-2-Logistic Regression Learner 5:6 :  : Node : Logistic Regression Learner : 5:6 : Execute failed: The input table is empty. Please provide data to learn on.
+java.lang.IllegalArgumentException: The input table is empty. Please provide data to learn on.
+	at org.knime.core.node.util.CheckUtils.checkArgument(CheckUtils.java:259)
+	at org.knime.core.node.util.CheckUtils.checkArgument(CheckUtils.java:120)
+	at org.knime.base.node.mine.regression.logistic.learner4.LogRegCoordinator.learn(LogRegCoordinator.java:170)
+	at org.knime.base.node.mine.regression.logistic.learner4.LogRegLearnerNodeModel.execute(LogRegLearnerNodeModel.java:140)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-11-14 00:18:03,877 : WARN  : KNIME-Worker-2-Logistic Regression Learner 5:6 :  : Node : Logistic Regression Learner : 5:6 : The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
+The covariance matrix could not be calculated because the observed fisher information matrix was singular. Did you properly normalize the numerical features?
+2024-11-14 00:18:44,979 : WARN  : KNIME-Worker-2-Logistic Regression Learner 5:6 :  : Node : Logistic Regression Learner : 5:6 : The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
+The covariance matrix could not be calculated because the observed fisher information matrix was singular. Did you properly normalize the numerical features?
+2024-11-14 00:20:21,573 : WARN  : comm-pool-thread-8 :  : Node : Scorer : 5:9 : No columns selected yet.
+2024-11-14 00:20:49,221 : WARN  : KNIME-Worker-3-Logistic Regression Learner 5:6 :  : Node : Logistic Regression Learner : 5:6 : The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
+2024-11-14 00:22:01,588 : WARN  : KNIME-Worker-4-Logistic Regression Learner 5:6 :  : Node : Logistic Regression Learner : 5:6 : The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
+2024-11-14 00:23:05,840 : WARN  : comm-pool-thread-7 :  : Node : CSV Reader : 6:1 : Please specify a file
+2024-11-14 00:24:41,918 : WARN  : comm-pool-thread-8 :  : Node : Numeric Outliers : 6:7 : Auto configuration: Outlier Selection uses all suitable columns (in total 6).
+2024-11-14 00:26:15,438 : WARN  : comm-pool-thread-8 :  : Node : Numeric Outliers : 6:9 : Auto configuration: Outlier Selection uses all suitable columns (in total 6).
+2024-11-14 00:26:28,958 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: No such node ID: 6:9 valid [6:1, 6:2, 6:3, 6:4, 6:5, 6:6, 6:7, 6:8] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-11-14 00:26:28,962 : ERROR : main :  : KnimeBrowserView :  :  : Uncaught (in promise) Error: No such node ID: 6:9 valid [6:1, 6:2, 6:3, 6:4, 6:5, 6:6, 6:7, 6:8] (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 22)
+2024-11-14 00:27:08,843 : WARN  : comm-pool-thread-7 :  : Node : Partitioning : 6:2 : No sampling method selected
+2024-11-14 00:27:32,117 : WARN  : main :  : Node : Scorer : 6:5 : No columns selected yet.
+2024-11-14 00:28:54,733 : WARN  : main :  : Node : Scorer : 6:5 : No columns selected yet.
+2024-11-14 00:28:56,646 : ERROR : KNIME-Worker-12-Logistic Regression Learner 6:4 :  : Node : Logistic Regression Learner : 6:4 : Execute failed: The column hours-per-week (Number (double)) contains missing values.
+java.lang.IllegalArgumentException: The column hours-per-week (Number (double)) contains missing values.
+	at org.knime.core.node.util.CheckUtils.checkArgument(CheckUtils.java:259)
+	at org.knime.core.node.util.CheckUtils.checkArgument(CheckUtils.java:136)
+	at org.knime.base.node.mine.regression.logistic.learner4.data.AbstractTrainingRowBuilder.analyze(AbstractTrainingRowBuilder.java:186)
+	at org.knime.base.node.mine.regression.logistic.learner4.data.AbstractTrainingRowBuilder.<init>(AbstractTrainingRowBuilder.java:130)
+	at org.knime.base.node.mine.regression.logistic.learner4.data.AbstractSparseClassificationTrainingRowBuilder.<init>(AbstractSparseClassificationTrainingRowBuilder.java:73)
+	at org.knime.base.node.mine.regression.logistic.learner4.data.SparseClassificationTrainingRowBuilder.<init>(SparseClassificationTrainingRowBuilder.java:87)
+	at org.knime.base.node.mine.regression.logistic.learner4.LogRegCoordinator.createRowBuilder(LogRegCoordinator.java:213)
+	at org.knime.base.node.mine.regression.logistic.learner4.LogRegCoordinator.learn(LogRegCoordinator.java:188)
+	at org.knime.base.node.mine.regression.logistic.learner4.LogRegLearnerNodeModel.execute(LogRegLearnerNodeModel.java:140)
+	at org.knime.core.node.NodeModel.executeModel(NodeModel.java:588)
+	at org.knime.core.node.Node.invokeFullyNodeModelExecute(Node.java:1286)
+	at org.knime.core.node.Node.execute(Node.java:1049)
+	at org.knime.core.node.workflow.NativeNodeContainer.performExecuteNode(NativeNodeContainer.java:594)
+	at org.knime.core.node.exec.LocalNodeExecutionJob.mainExecute(LocalNodeExecutionJob.java:98)
+	at org.knime.core.node.workflow.NodeExecutionJob.internalRun(NodeExecutionJob.java:198)
+	at org.knime.core.node.workflow.NodeExecutionJob.run(NodeExecutionJob.java:117)
+	at org.knime.core.util.ThreadUtils$RunnableWithContextImpl.runWithContext(ThreadUtils.java:367)
+	at org.knime.core.util.ThreadUtils$RunnableWithContext.run(ThreadUtils.java:221)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Unknown Source)
+	at java.base/java.util.concurrent.FutureTask.run(Unknown Source)
+	at org.knime.core.util.ThreadPool$MyFuture.run(ThreadPool.java:123)
+	at org.knime.core.util.ThreadPool$Worker.run(ThreadPool.java:246)
+2024-11-14 00:29:52,973 : WARN  : KNIME-Worker-14-Missing Value (Apply) 6:10 :  : Node : Scorer : 6:5 : No columns selected yet.
+2024-11-14 00:29:56,433 : WARN  : KNIME-Worker-15-Normalizer 6:6 :  : Node : Scorer : 6:5 : No columns selected yet.
+2024-11-14 00:29:58,967 : WARN  : KNIME-Worker-13-Logistic Regression Learner 6:4 :  : Node : Logistic Regression Learner : 6:4 : Columns "capital-loss", "capital-gain" have constant values  - will be ignored during training
+2024-11-14 00:30:08,027 : WARN  : KNIME-Worker-14-Logistic Regression Predictor 6:3 :  : Node : Scorer : 6:5 : No columns selected yet.
+2024-11-14 00:30:51,371 : WARN  : KNIME-Worker-19-Logistic Regression Learner 6:4 :  : Node : Logistic Regression Learner : 6:4 : Columns "capital-loss", "capital-gain" have constant values  - will be ignored during training
+2024-11-14 00:39:39,188 : ERROR : main :  : ProjectAPI :  :  : Workflow with ID '05_Logistische_Regression_cb6cb8a5-75e3-4788-a6b2-4788ae30321a' couldn't be loaded. Workflow closed.
+2024-11-14 00:39:39,212 : WARN  : comm-pool-thread-1 :  : JsonRpcErrorResolver :  :  : An unexpected json rpc error occurred
+java.util.NoSuchElementException: Workflow project for ID "05_Logistische_Regression_cb6cb8a5-75e3-4788-a6b2-4788ae30321a" not found.
+	at org.knime.gateway.impl.service.util.DefaultServiceUtil.lambda$0(DefaultServiceUtil.java:126)
+	at java.base/java.util.Optional.orElseThrow(Unknown Source)
+	at org.knime.gateway.impl.service.util.DefaultServiceUtil.getRootWorkflowManager(DefaultServiceUtil.java:125)
+	at org.knime.gateway.impl.service.util.DefaultServiceUtil.getWorkflowManager(DefaultServiceUtil.java:155)
+	at org.knime.gateway.impl.webui.WorkflowMiddleware$WorkflowState.<init>(WorkflowMiddleware.java:434)
+	at org.knime.gateway.impl.webui.WorkflowMiddleware.createWorkflowStateAndEventuallyClearCache(WorkflowMiddleware.java:388)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(Unknown Source)
+	at org.knime.gateway.impl.webui.WorkflowMiddleware.getWorkflowState(WorkflowMiddleware.java:384)
+	at org.knime.gateway.impl.webui.WorkflowMiddleware.buildWorkflowSnapshotEnt(WorkflowMiddleware.java:188)
+	at org.knime.gateway.impl.webui.service.DefaultWorkflowService.getWorkflow(DefaultWorkflowService.java:125)
+	at org.knime.gateway.impl.webui.jsonrpc.service.JsonRpcWorkflowServiceWrapper.getWorkflow(JsonRpcWorkflowServiceWrapper.java:124)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.invoke(JsonRpcBasicServer.java:478)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleObject(JsonRpcBasicServer.java:349)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleJsonNodeRequest(JsonRpcBasicServer.java:274)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleRequest(JsonRpcBasicServer.java:242)
+	at org.knime.gateway.impl.jsonrpc.JsonRpcRequestHandler.handle(JsonRpcRequestHandler.java:104)
+	at org.knime.ui.java.browser.lifecycle.Init.lambda$11(Init.java:296)
+	at com.equo.comm.common.MessageHandler.processReceivedEventMessage(MessageHandler.java:131)
+	at com.equo.comm.ee.provider.service.ChromiumService.receiveMessage(ChromiumService.java:98)
+	at com.equo.comm.ee.provider.CommunicationManagerChromiumImpl.receiveMessage(CommunicationManagerChromiumImpl.java:48)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.handleRequest(CommRouterHandler.java:33)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.lambda$1(CommRouterHandler.java:51)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2024-11-14 00:39:39,224 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Workflow project for ID "05_Logistische_Regression_cb6cb8a5-75e3-4788-a6b2-4788ae30321a" not found. (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-11-14 00:39:41,056 : ERROR : main :  : ProjectAPI :  :  : Workflow with ID '06_Logistische_Regression_4d4f7c3d-20e1-4973-a958-56e488237d69' couldn't be loaded. Workflow closed.
+2024-11-14 00:39:41,060 : WARN  : comm-pool-thread-1 :  : JsonRpcErrorResolver :  :  : An unexpected json rpc error occurred
+java.util.NoSuchElementException: Workflow project for ID "06_Logistische_Regression_4d4f7c3d-20e1-4973-a958-56e488237d69" not found.
+	at org.knime.gateway.impl.service.util.DefaultServiceUtil.lambda$0(DefaultServiceUtil.java:126)
+	at java.base/java.util.Optional.orElseThrow(Unknown Source)
+	at org.knime.gateway.impl.service.util.DefaultServiceUtil.getRootWorkflowManager(DefaultServiceUtil.java:125)
+	at org.knime.gateway.impl.service.util.DefaultServiceUtil.getWorkflowManager(DefaultServiceUtil.java:155)
+	at org.knime.gateway.impl.webui.WorkflowMiddleware$WorkflowState.<init>(WorkflowMiddleware.java:434)
+	at org.knime.gateway.impl.webui.WorkflowMiddleware.createWorkflowStateAndEventuallyClearCache(WorkflowMiddleware.java:388)
+	at java.base/java.util.concurrent.ConcurrentHashMap.computeIfAbsent(Unknown Source)
+	at org.knime.gateway.impl.webui.WorkflowMiddleware.getWorkflowState(WorkflowMiddleware.java:384)
+	at org.knime.gateway.impl.webui.WorkflowMiddleware.buildWorkflowSnapshotEnt(WorkflowMiddleware.java:188)
+	at org.knime.gateway.impl.webui.service.DefaultWorkflowService.getWorkflow(DefaultWorkflowService.java:125)
+	at org.knime.gateway.impl.webui.jsonrpc.service.JsonRpcWorkflowServiceWrapper.getWorkflow(JsonRpcWorkflowServiceWrapper.java:124)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.invoke(JsonRpcBasicServer.java:478)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleObject(JsonRpcBasicServer.java:349)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleJsonNodeRequest(JsonRpcBasicServer.java:274)
+	at com.googlecode.jsonrpc4j.JsonRpcBasicServer.handleRequest(JsonRpcBasicServer.java:242)
+	at org.knime.gateway.impl.jsonrpc.JsonRpcRequestHandler.handle(JsonRpcRequestHandler.java:104)
+	at org.knime.ui.java.browser.lifecycle.Init.lambda$11(Init.java:296)
+	at com.equo.comm.common.MessageHandler.processReceivedEventMessage(MessageHandler.java:131)
+	at com.equo.comm.ee.provider.service.ChromiumService.receiveMessage(ChromiumService.java:98)
+	at com.equo.comm.ee.provider.CommunicationManagerChromiumImpl.receiveMessage(CommunicationManagerChromiumImpl.java:48)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.handleRequest(CommRouterHandler.java:33)
+	at com.equo.chromium.swt.internal.spi.CommRouterHandler.lambda$1(CommRouterHandler.java:51)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(Unknown Source)
+	at java.base/java.lang.Thread.run(Unknown Source)
+2024-11-14 00:39:41,069 : ERROR : main :  : KnimeBrowserView :  :  : %cerror%c Error making RPC call 
+      background: #c0392b;
+      border-radius: 0.5em;
+      color: white;
+      font-weight: bold;
+      padding: 2px 0.5em;
+      Error: Workflow project for ID "06_Logistische_Regression_4d4f7c3d-20e1-4973-a958-56e488237d69" not found. (source: http://org.knime.ui.java/assets/index-PyhZB-uQ.js; line: 64)
+2024-11-14 00:39:51,712 : WARN  : ModalContext :  : Node : Logistic Regression Learner : 4:6 : The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
+2024-11-14 00:39:53,042 : WARN  : ModalContext :  : Node : Logistic Regression Learner : 5:4 : Columns "capital-loss", "capital-gain" have constant values  - will be ignored during training
+2024-11-14 00:40:12,686 : WARN  : KNIME-Worker-0-Logistic Regression Learner 4:6 :  : Node : Logistic Regression Learner : 4:6 : The algorithm did not reach convergence after the specified number of epochs. Setting the epoch limit higher might result in a better model.
+2024-11-14 00:40:34,358 : WARN  : KNIME-Worker-2-Logistic Regression Learner 5:4 :  : Node : Logistic Regression Learner : 5:4 : Columns "capital-loss", "capital-gain" have constant values  - will be ignored during training
