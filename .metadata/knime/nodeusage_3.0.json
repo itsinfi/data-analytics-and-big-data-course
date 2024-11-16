@@ -323,8 +323,8 @@
             "WEB_UI_QUICK_INSERTION_RECOMMENDED": 2
         }
     },
-    "uptime": 14478052,
-    "workflowsOpened": 21,
+    "uptime": 14112748,
+    "workflowsOpened": 22,
     "remoteWorkflowsOpened": 0,
     "columnarStorageWorkflowsOpened": 0,
     "workflowsImported": 0,
@@ -332,9 +332,9 @@
     "webUIPerspectiveSwitches": 0,
     "javaUIPerspectiveSwitches": 0,
     "lastUsedPerspective": "none",
-    "launches": 9,
+    "launches": 10,
     "lastApplicationID": "org.knime.product.KNIME_APPLICATION",
-    "timeSinceLastStart": 80775,
+    "timeSinceLastStart": 10825017,
     "crashes": 0,
     "properlyShutDown": true
 }
