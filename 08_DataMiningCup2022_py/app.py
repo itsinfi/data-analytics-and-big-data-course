@@ -51,7 +51,7 @@ prepared_data = prepare_data(
 )
 print('--- Finish preparing data... ---')
 
-# Train model
+# Train model TODO:
 print('--- Start training neural network...')
 train_cnn(data=prepared_data)
 print('--- Finish training neural network...')
