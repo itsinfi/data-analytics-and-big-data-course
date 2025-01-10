@@ -1,45 +1,35 @@
-from src import read_data;
-from src import prepare_data;
-from datetime import datetime;
+from src import read_data
+from src import prepare_data
+from src import train_cnn
+from datetime import datetime
 
 # Global Parameters
-cat_hierarchy_file: str = 'data/category_hierarchy.csv';
-items_file: str = 'data/items.csv';
-orders_file: str = 'data/orders.csv';
-submissions_file: str = 'data/submission.csv';
-delimiter: str = '|';
-eol: str = '\n';
-limit: int = 5000;
-keys_to_include: list[str] = [
-    'itemID',
-    'userID',
-    'date',
-    'category',
-    'parent_category',
-    'feature_1',
-    'feature_2',
-    'feature_3',
-    'feature_4',
-    'feature_5',
-];
-typecasts: dict[str, type] = {
+cat_hierarchy_file = 'data/category_hierarchy.csv'
+items_file = 'data/items.csv'
+orders_file = 'data/orders.csv'
+submissions_file = 'data/submission.csv'
+delimiter = '|'
+eol = '\n'
+limit = 4000
+filter = {
     'itemID': int,
     'userID': int,
     'date': datetime,
     'category': int,
-    'parent_cat': int,
+    'parent_category': int,
     'feature_1': int,
     'feature_2': int,
     'feature_3': int,
     'feature_4': int,
     'feature_5': int,
-};
-date_format: str = '%Y-%m-%d';
+}
+date_format = '%Y-%m-%d'
+label_name = 'parent_category'
 
 
 # Read data
-print('--- Start reading data...');
-joined_list: list[dict[str, str]] = read_data(
+print('--- Start reading data...')
+joined_list = read_data(
     cat_hierarchy_file=cat_hierarchy_file, 
     items_file=items_file,
     orders_file=orders_file, 
@@ -47,20 +37,23 @@ joined_list: list[dict[str, str]] = read_data(
     delimiter=delimiter, 
     eol=eol, 
     limit=limit,
-);
-print('--- Finish reading data...');
+)
+print('--- Finish reading data...')
 
 
 # Prepare data
-print('--- Start preparing data...');
-prepared_data: list[dict[str, any]] = prepare_data(
+print('--- Start preparing data...')
+prepared_data = prepare_data(
     data=joined_list,
-    keys_to_include=keys_to_include,
-    typecasts=typecasts,
+    filter=filter,
     date_format=date_format,
-);
-print('--- Finish preparing data... ---');
+    label_name=label_name
+)
+print('--- Finish preparing data... ---')
 
+# Train model
+print('--- Start training neural network...')
+train_cnn(data=prepared_data)
+print('--- Finish training neural network...')
 
-# TODO: continue
 
