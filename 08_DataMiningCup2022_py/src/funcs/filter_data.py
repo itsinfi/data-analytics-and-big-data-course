@@ -1,6 +1,7 @@
 from datetime import datetime
+from typing import List, Dict
 
-def filter_data(data: list[dict[str, str]], filter: dict[str, type], date_format: str) -> list[dict[str, int]]:
+def filter_data(data: List[Dict[str, str]], filter: Dict[str, type], date_format: str) -> List[Dict[str, int]]:
     new_list = []
     
     for element in data:

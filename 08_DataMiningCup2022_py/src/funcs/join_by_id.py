@@ -1,4 +1,6 @@
-def join_by_id(id_name: str, list1: list[dict[str, str]], list2: list[dict[str, str]]) -> list[dict[str, str]]:
+from typing import List, Dict
+
+def join_by_id(id_name: str, list1: List[Dict[str, str]], list2: List[Dict[str, str]]) -> List[Dict[str, str]]:
     merged_list = []
     for element1 in list1:
         for element2 in list2:

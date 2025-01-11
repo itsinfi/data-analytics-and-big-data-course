@@ -1,4 +1,6 @@
-def read_csv(csv_file: str, delimiter: str, eol: str, limit: int) -> list[dict[str, str]]:
+from typing import List, Dict
+
+def read_csv(csv_file: str, delimiter: str, eol: str, limit: int) -> List[Dict[str, str]]:
     print(f'     --- Start reading f{csv_file}...')
 
     with open(csv_file, 'r') as file:

@@ -1,10 +1,11 @@
-from .utils.read_csv import read_csv
-from .utils.join_by_id import join_by_id
-from .utils.join_cat_item import join_cat_item
+from .funcs.read_csv import read_csv
+from .funcs.join_by_id import join_by_id
+from .funcs.join_cat_item import join_cat_item
+from typing import List, Dict
 
 id_name: str = 'itemID'
 
-def read_data(cat_hierarchy_file: str, items_file: str, orders_file: str, submissions_file: str, delimiter: str, eol: str, limit: int) -> list[dict[str, str]]:
+def read_data(cat_hierarchy_file: str, items_file: str, orders_file: str, submissions_file: str, delimiter: str, eol: str, limit: int) -> List[Dict[str, str]]:
     # Read csv
     cat_hierarchy = read_csv(csv_file=cat_hierarchy_file, delimiter=delimiter, eol=eol, limit=limit)
     items = read_csv(csv_file=items_file, delimiter=delimiter, eol=eol, limit=limit)

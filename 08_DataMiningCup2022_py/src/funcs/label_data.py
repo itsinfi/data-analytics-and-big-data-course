@@ -1,6 +1,7 @@
 from numpy import array, ndarray
+from typing import List, Dict, Tuple
 
-def label_data(data: list[dict[str, int]], label_name: str) -> tuple[ndarray[ndarray[int]], ndarray[int]]:
+def label_data(data: List[Dict[str, int]], label_name: str) -> Tuple[ndarray[ndarray[int]], ndarray[int]]:
     
     data_array = []
     label_array = []
