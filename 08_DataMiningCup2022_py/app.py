@@ -1,7 +1,7 @@
 from src import read_data
 from src import prepare_data
 from src import train_cnn
-from config import *
+from app_config import *
 
 # Read data
 print('--- Start reading data...')
