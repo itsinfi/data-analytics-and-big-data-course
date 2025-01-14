@@ -1,3 +1,39 @@
 L1-AP/
 Example Workflows/
 .metadata/
+
+# KNIME Workflow Dateien
+**/.settings/
+**/.classpath
+**/.project
+
+# Temporäre und Cache-Dateien
+**/knime.log
+**/.snapshots/
+**/temp/
+
+# Output-Verzeichnisse
+**/output/
+**/results/
+**/data/
+
+# Benutzerbezogene Konfigurationsdateien
+**/workflow.knime.json
+
+# Von KNIME generierte Arbeitsdateien
+**/*.table
+**/*.model
+**/*.data
+
+# Sicherungsdateien (können bei Änderungen entstehen)
+**/workflow.knime.backup
+
+# Andere temporäre Dateien (z. B. von Betriebssystemen oder IDEs)
+*.DS_Store
+Thumbs.db
+.idea/
+*.bak
+*.swp
+
+# Python Environment (falls integriert)
+.knime_py_env/
