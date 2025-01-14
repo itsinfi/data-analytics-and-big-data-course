@@ -1,39 +1,28 @@
+from src.config import *
 from src import read_data
-from src import prepare_data
-from src import train_cnn
-from app_config import *
+from tensorflow.keras.models import Sequential#, load_model TODO:
 
-# Read data
-print('--- Start reading data...')
-joined_list = read_data(
-    cat_hierarchy_file=CAT_HIERARCHY_CSV, 
-    items_file=ITEMS_CSV,
-    orders_file=ORDERS_CSV, 
-    submissions_file=SUBMISSIONS_CSV,
-    delimiter=CSV_DELIMITER, 
-    eol=CSV_EOL, 
-    limit=CSV_LIMIT,
-)
-print('--- Finish reading data...')
+x_train, x_test, y_train, y_test = read_data(csv_cfg_list=CSV_CFG, label_cfg=LABEL_CFG, test_size=TEST_SIZE)
 
+# TODO: create model
+# model = Sequential(
+#     MODEL_CFG.LAYERS
+# )
 
-# Prepare data
-print('--- Start preparing data...')
-data_array, label_array = prepare_data(
-    data=joined_list,
-    filter=DATA_FILTER,
-    date_format=DATE_FORMAT,
-    label_name=LABEL_VARIABLE_NAME,
-)
-print('--- Finish preparing data... ---')
+# model.compile(
+#     loss=COMPILER_CFG.LOSS,
+#     optimizer=COMPILER_CFG.OPTIMIZER,
+#     metrics=COMPILER_CFG.METRICS,
+# )
 
-# Train model TODO:
-print('--- Start training neural network...')
-train_cnn(
-    data=data_array,
-    labels=label_array,
-    cfg=MODEL_CFG,
-)
-print('--- Finish training neural network...')
+# model.fit(
+#     x_train,
+#     y_train,
+#     epochs=TRAINING_CFG.EPOCHS,
+#     batch_size=TRAINING_CFG.BATCH_SIZE,
+# )
 
-
+# loss, accuracy = model.evaluate(x_test, y_test)
+# if 'accuracy' in COMPILER_CFG.METRICS:
+#     print('--- Accuracy:', accuracy)
+# print('--- Loss:', loss)
