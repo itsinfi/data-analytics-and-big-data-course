@@ -14,3 +14,5 @@ from .funcs import apply_list_conversions
 from .funcs import join_data
 from .funcs import parse_list
 from .funcs import split_data
+from .funcs import train_model
+from .funcs import test_model
